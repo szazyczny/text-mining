@@ -1,0 +1,490 @@
+<!DOCTYPE html><html><head>
+      <title>instructions</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///C:\Users\zli\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.3.10\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h1 class="mume-header" id="assignment-2-text-mining-and-analysis">Assignment 2: Text Mining and Analysis</h1>
+
+<h2 class="mume-header" id="introduction">Introduction</h2>
+
+<p>In this project you will learn how to use computational techniques to analyze text. Specifically, you will access text from the web and social media (such as Twitter), run some sort of computational analysis on it, and create some sort of deliverable (either some interesting results from a text analysis, a visualization of some kind, or perhaps a computer program that manipulates language in some interesting way). You will be working with a partner on this assignment.</p>
+<p><strong>Skills Emphasized</strong>:</p>
+<ul>
+<li>Accessing information on the Internet programmatically</li>
+<li>Parsing text and storing it in relevant data structures</li>
+<li>Choosing task-appropriate data structures (e.g. dictionaries versus lists)</li>
+<li>Computational methods for characterizing and comparing text</li>
+</ul>
+<h2 class="mume-header" id="how-to-proceed">How to proceed</h2>
+
+<p>In order to get started on the assignment, you should fork the base repository for the text mining and analysis mini-project. Once you&apos;ve forked the repository, clone the repository on your computer.</p>
+<p>You should read this document in a somewhat non-linear/spiral fashion:</p>
+<ol>
+<li>Scan through Part 1 to get a sense of what data sources are available. Try grabbing text from one of the sources that interests you. You do not need to try all the data sources.</li>
+<li>Scan through Part 2 to see a bunch of cool examples for what you can do with your text.</li>
+<li>Choose (at least) one data source from Part 1 or elsewhere and analyze/manipulate/transform that text using technique(s) from Part 2 or elsewhere.</li>
+<li>Write a brief document about what you did (Part 3)</li>
+</ol>
+<h3 class="mume-header" id="teaming-logistics">Teaming Logistics:</h3>
+
+<ul>
+<li>You must work in a team of exactly two students.</li>
+<li>Your partner cannot be in the same term-project team with you.</li>
+<li>Only one of you should fork the base repo for this assignment. The one that forks the repo should then add the other team member as a collaborator on Github for that repo.</li>
+</ul>
+<h3 class="mume-header" id="teaming-guidance">Teaming Guidance:</h3>
+
+<ul>
+<li>Do not thoughtlessly default to working with your friend.</li>
+<li>Make sure you and your potential partner are on the same page in terms of project topic.</li>
+<li>You should partner with someone that has roughly the same commitment level to the project. For instance, someone that is super gung-ho about making the most amazing programming project evar should not partner with someone that is just looking to do the minimum.</li>
+<li>You should be mindful of differences in level of programming experience when selecting your partner. Teams that are very closely matched in terms of programming experience should be no problem. Teams that are not closely matched on this axis can also be quite effective. However, if you and your partner are not closely matched you will want to make sure that you are both vigilant about avoiding some common pitfalls that occur with this type of team. The two most common pitfalls are: the person with more experience gets frustrated with the other team member and does all the work, and the person with more experience writes all the code while the person with less experiences watches them.</li>
+</ul>
+<h2 class="mume-header" id="part-1-harvesting-text-from-the-internet">Part 1: Harvesting text from the Internet</h2>
+
+<p>The goal for Part 1 is for you to get some text from the Internet with the aim of doing something interesting with it down the line. As you approach the assignment, I recommend that you get a feel for the types of text that you can grab using different Python packages. However, before spending too much time going down a particular path on the text acquisition component, you should look ahead to Part 2 to understand some of the things you can do with text you are harvesting. The strength of your mini project will be in combining a source of text with an appropriate technique for language analysis (see Part 2).</p>
+<h3 class="mume-header" id="data-source-project-gutenberg">Data Source: Project Gutenberg</h3>
+
+<p>Project Gutenberg (<a href="http://www.gutenberg.org/">http://www.gutenberg.org/</a>) is a website that has over 55,000 freely available e-books. In contrast to some sites, this site is 100% legal since all of these texts are no longer under copyright protection. For example, the website boasts 171 works by Charles Dickens. Perhaps the best thing about the texts on this site is that they are available in plain text format, rather than PDF which would require some additional computational processing to process in Python.</p>
+<p>In order to download a book from Project Gutenberg you should first use their search engine to find a link to a book that you are interested in analyzing. For instance, if I decide that I want to analyze Oliver Twist I would click on this link (<a href="http://www.gutenberg.org/ebooks/730">http://www.gutenberg.org/ebooks/730</a>) from the Gutenberg search engine. Next, I would copy the link from the portion of the page that says &quot;Plain Text UTF-8&quot;. It turns out that the link to the text of Oliver Twist is (<a href="http://www.gutenberg.org/ebooks/730.txt.utf-8">http://www.gutenberg.org/ebooks/730.txt.utf-8</a>). To download the text inside Python, I would use the following code:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>import urllib.request
+
+url = &apos;http://www.gutenberg.org/ebooks/730.txt.utf-8&apos;
+response = urllib.request.urlopen(url)
+data = response.read()  # a `bytes` object
+text = data.decode(&apos;utf-8&apos;)
+print(text) # for testing
+</code></pre><p>Note, that there is a preamble (boiler plate on Project Gutenberg, table of contents, etc.) that has been added to the text that you might want to strip out (potentially using Python code) when you do your analysis (there is similar material at the end of the file). The one complication with using Project Gutenberg is that they impose a limit on how many texts you can download in a 24-hour period. So, if you are analyzing say 10 texts, you might want to download them once and load them off disk rather than fetching them off of Project Gutenberg&apos;s servers every time you run your program (see the <strong>Pickling Data</strong> section in session of <strong>Files</strong> for some relevant information on doing this). However, there are many mirrors of the Project Gutenberg site if you want to get around the download restriction.</p>
+<h3 class="mume-header" id="data-source-wikipedia">Data Source: Wikipedia</h3>
+
+<p>Another source of data that you can easily access and parse is Wikipedia. You can use wikipedia package (<a href="https://pypi.python.org/pypi/wikipedia/">https://pypi.python.org/pypi/wikipedia/</a>) to search Wikipedia, get article summaries, get data like links and images from a page, and more. To get this pacakge, run the following command in <strong>Command Prompt</strong>:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>pip install wikipedia
+</code></pre><p>Given that you know the particular title of the article you would like to access, you can fetch the article and then print out its sections using the following Python program:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>import wikipedia
+
+babson = wikipedia.page(&quot;Babson College&quot;)
+print(babson.title)
+print(babson.url)
+print(babson.content)
+
+</code></pre><p>Which yields the output:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>Babson College 
+
+https://en.wikipedia.org/wiki/Babson_College           
+
+Babson College is a private business school in Wellesley, Massachusetts, established in 1919. Its central focus is on entrepreneurship education, and it is often ranked the most prestigious entrepreneurship college in the United States....
+</code></pre><h3 class="mume-header" id="data-source-twitter">Data Source: Twitter</h3>
+
+<p>To search Twitter, you need first create a new application in Twitter Apps(<a href="https://apps.twitter.com/">https://apps.twitter.com/</a>). Then you need a Python library <code>twython</code> (another choice is <code>tweepy</code>), which you can install by running the following command in <strong>Command Prompt</strong>:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>pip install twython
+</code></pre><p>Here is a simple example for searching tweets containing <code>Patriots</code>:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>from twython import Twython
+
+# Replace the following strings with your own keys and secrets
+TOKEN = &apos;Your TOKEN&apos;
+TOKEN_SECRET = &apos;Your TOKEN_SECRET&apos;
+CONSUMER_KEY = &apos;Your CONSUMER_KEY&apos;
+CONSUMER_SECRET = &apos;Your CONSUMER_SECRET&apos;
+
+
+t = Twython(CONSUMER_KEY, CONSUMER_SECRET,
+   TOKEN, TOKEN_SECRET)
+
+data = t.search(q=&quot;Patriots&quot;, count=50)
+
+
+for status in data[&apos;statuses&apos;]:
+    print(status[&apos;text&apos;])
+
+</code></pre><p>When I ran this program the other day I got the following output:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>RT @Boyd_2650: &#x1F534;&#x2666;&#xFE0F;MN PATRIOTS!&#x1F534;&#x2666;&#xFE0F;The ball is in your court! It&#x2019;s time to decide who you want to repres
+ent your great state! Please vote 4 R&#x2026;
+Dodgers vs Red Sox
+
+Rams vs Patriots
+
+Warriors vs Celtics
+
+@Blakepierson513 @Kinslow214 All favorites to go to ch&#x2026; https://t.co/qRFgfCT9my
+...
+</code></pre><h3 class="mume-header" id="data-source-reddit">Data Source: Reddit</h3>
+
+<p>To get reddit data, you need to install Python PRAW package by running the following command in <strong>Command Prompt</strong>:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>pip install praw
+</code></pre><p>Here&apos;s an example from the PRAW docs page (<a href="https://praw.readthedocs.io/en/stable/">https://praw.readthedocs.io/en/stable/</a>):</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>import praw
+import config
+reddit = praw.Reddit(client_id=config.client_id,
+                     client_secret=config.client_secret,
+                     username=config.username,
+                     password=config.password,
+                     user_agent=config.user_agent)
+sub = &apos;learnpython&apos;
+submissions = reddit.subreddit(sub).top(&apos;day&apos;, limit=5)
+top5 = [(submission.title, submission.selftext) for submission in submissions]
+</code></pre><h3 class="mume-header" id="sms-spam-collection">SMS Spam Collection</h3>
+
+<p>This collection(<a href="http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/">http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/</a>) is composed by 5,574 English, real and non-enconded messages, tagged according being legitimate (ham) or spam. You can download data this link (<a href="http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/smsspamcollection.zip">http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/smsspamcollection.zip</a>).</p>
+<h3 class="mume-header" id="imdb-movie-reviews">IMDB Movie Reviews</h3>
+
+<p>To get IMDB data, you need to install Python imdbpie package by running the following command in <strong>Command Prompt</strong>:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>pip install imdbpie
+</code></pre><p>Here&apos;s an example to print the first review of the movie &apos;The Dark Knight&apos;:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>from imdbpie import Imdb
+
+imdb = Imdb()
+print(imdb.search_for_title(&quot;The Dark Knight&quot;)[0])
+reviews = imdb.get_title_user_reviews(&quot;tt0468569&quot;)
+
+# import pprint
+# pprint.pprint(reviews)
+
+print(reviews[&apos;reviews&apos;][0][&apos;author&apos;][&apos;displayName&apos;])
+print(reviews[&apos;reviews&apos;][0][&apos;reviewText&apos;])
+
+</code></pre><h3 class="mume-header" id="more-data-sources">More Data Sources</h3>
+
+<p>There are many other data sources that you can find:</p>
+<ul>
+<li>Newsfeed</li>
+<li>DBPedia</li>
+<li>Google search</li>
+<li>Bing search</li>
+<li>Enron email dataset (<a href="https://www.cs.cmu.edu/~./enron/">https://www.cs.cmu.edu/~./enron/</a>)</li>
+<li>TripAdvisor dataset (<a href="http://times.cs.uiuc.edu/~wang296/Data/">http://times.cs.uiuc.edu/~wang296/Data/</a>)</li>
+<li>Yelp dataset (<a href="https://www.yelp.com/dataset_challenge">https://www.yelp.com/dataset_challenge</a>)</li>
+<li>News articles (<a href="https://archive.ics.uci.edu/ml/datasets/Reuters-21578+Text+Categorization+Collection">https://archive.ics.uci.edu/ml/datasets/Reuters-21578+Text+Categorization+Collection</a>)</li>
+<li>...</li>
+</ul>
+<h3 class="mume-header" id="pickling-data">Pickling Data</h3>
+
+<p>For several of these data sources you might find that the API calls take a pretty long time to return, or that you run into various API limits. To deal with this, you will want to save the data that you collect from these services so that the data can be loaded back at a later point in time. Suppose you have a bunch of Project Gutenberg texts in a list called <code>charles_dickens_texts</code>. You can save this list to disk and then reload it using the following code:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>import pickle
+
+# Save data to a file (will be part of your data fetching script)
+
+with open(&apos;dickens_texts.pickle&apos;,&apos;w&apos;) as f:
+    pickle.dump(charles_dickens_texts,f)
+
+
+# Load data from a file (will be part of your data processing script)
+with open(&apos;dickens_texts.pickle&apos;,&apos;r&apos;) as input_file:
+    reloaded_copy_of_texts = pickle.load(input_file)
+</code></pre><p>The result of running this code is that all of the texts in the list variable <code>charles_dickens_texts</code> will now be in the list variable <code>reloaded_copy_of_texts</code>. In the code that you write for this project you won&apos;t want to pickle and then unpickle in the same Python script. Instead, you might want to have a script that pulls data from the web and then pickles them to disk. You can then create another program for processing the data that will read the pickle file to get the data loaded into Python so you can perform some analysis on it.</p>
+<h2 class="mume-header" id="part-2-analyzing-your-text">Part 2: Analyzing Your Text</h2>
+
+<h3 class="mume-header" id="characterizing-by-word-frequencies">Characterizing by Word Frequencies</h3>
+
+<p>One way to begin to process your text is to take each unit of text (for instance a book from Project Gutenberg, or perhaps a collection of movie reviews and summarize it by counting the number of times a particular word appears in the text. A natural way to approach this in Python would be to use a dictionary where the keys are words that appear and the values are frequencies of words in the text (if you want to do something fancier look into using TF-IDF features (<a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">https://en.wikipedia.org/wiki/Tf&#x2013;idf</a>)).</p>
+<h3 class="mume-header" id="computing-summary-statistics">Computing Summary Statistics</h3>
+
+<p>Beyond simply calculating word frequencies there are some other ways to summarize the words in a text. For instance, what are the top 10 words in each text? What are the words that appear the most in each text that don&apos;t appear in other texts?</p>
+<h3 class="mume-header" id="doing-natural-language-processing">Doing Natural Language Processing</h3>
+
+<p>NLTK - the Natural Language Toolkit (<a href="http://www.nltk.org/index.html">http://www.nltk.org/index.html</a>) is a leading platform for building Python programs to work with human language data. It provides some really cool natural language processing capabilities. Some examples include: part of speech tagging, sentiment analysis, and full sentence parsing.</p>
+<p>To use NLTK, you need to install nltk by running the following command in <strong>Command Prompt</strong>:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>pip install nltk
+</code></pre><p>Here is an example of doing sentiment analysis (<a href="https://en.wikipedia.org/wiki/Sentiment_analysis">https://en.wikipedia.org/wiki/Sentiment_analysis</a>):</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
+sentence = &apos;Software Design is my favorite class because learning Python is so cool!&apos;
+score = SentimentIntensityAnalyzer().polarity_scores(sentence)
+print(score)
+</code></pre><p>This program will print out:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>{&apos;neg&apos;: 0.0, &apos;neu&apos;: 0.614, &apos;pos&apos;: 0.386, &apos;compound&apos;: 0.7417}
+</code></pre><p>If you perform some natural language processing, you may be able to say something interesting about the text you harvested from the web. For instance, if you listen to a particular Twitter hashtag on a political topic, can you gauge the mood of the country by looking at the sentiment of each tweet that comes by in the stream? Which of recent movies received most negative reviews? There are tons of cool options here!</p>
+<h3 class="mume-header" id="text-similarity">Text Similarity</h3>
+
+<p>It is potentially quite useful to be able to compute the similarity of two texts. Suppose that we have characterized some texts from Project Gutenberg using word frequency analysis. One way to compute the similarity of two texts is to test to what extent when one text has a high count for a particular word the other text also a high count for a particular word. Specifically, we can compute the cosine similarity between the two texts. This strategy involves thinking of the word counts for each text as being high-dimensional vectors where the number of dimensions is equal to the total number of unique words in your text dataset and the entry in a particular element of the vector is the count of how frequently the corresponding word appears in a specific document (if this is a bit vague and you want to try this approach, send professor an e-mail).</p>
+<h3 class="mume-header" id="text-clustering">Text Clustering</h3>
+
+<p>If you can generate pairwise similarities (say using the technique above), you can Metric Multi-dimensional Scaling (MDS) to visualize the texts in a two dimensional space. This can help identify clusters of similar texts.</p>
+<p>In order to apply MDS to your data, you can use the machine learning toolkit scikit-learn. Here is some code that uses the similarity matrix defined in the previous section to create a 2-dimensional embedding of the four Charles Dickens and 1 Charles Darwin texts.</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>import numpy as np
+from sklearn.manifold import MDS
+import matplotlib.pyplot as plt
+
+# these are the similarities computed from the previous section
+S = np.asarray([[1., 0.90850572, 0.96451312, 0.97905034, 0.78340575],
+    [0.90850572, 1., 0.95769915, 0.95030073, 0.87322494],
+    [0.96451312, 0.95769915, 1., 0.98230284, 0.83381607],
+    [0.97905034, 0.95030073, 0.98230284, 1., 0.82953109],
+    [0.78340575, 0.87322494, 0.83381607, 0.82953109, 1.]])
+
+# dissimilarity is 1 minus similarity
+dissimilarities = 1 - S
+
+# compute the embedding
+coord = MDS(dissimilarity=&apos;precomputed&apos;).fit_transform(dissimilarities)
+
+plt.scatter(coord[:, 0], coord[:, 1])
+
+# Label the points
+for i in range(coord.shape[0]):
+ plt.annotate(str(i), (coord[i, :]))
+
+
+plt.show()
+</code></pre><p>This will generate the following plot. The coordinates don&apos;t have any special meaning, but the embedding tries to maintain the similarity relationships that we computed via comparing word frequencies. Keep in mind that the point labeled 4 is the work by Charles Darwin.<br>
+<img src="text_clustering.png" alt="text_clustering"></p>
+<h3 class="mume-header" id="markov-text-synthesis">Markov Text Synthesis</h3>
+
+<p>You can use Markov analysis to learn a generative model of the text that you collect from the web and use it to generate new texts. You can even use it to create mashups of multiple texts. One of possibilities in this space would be to to create literary mashups automatically. Again, let professor know if you go this route and we can provide more guidance.</p>
+<h2 class="mume-header" id="part-3-project-writeup-and-reflection">Part 3: Project Writeup and Reflection</h2>
+
+<p>Please prepare a short (suggested lengths given below) document with the following sections:</p>
+<p><strong>1. Project Overview</strong> [Maximum 100 words]<br>
+What data source(s) did you use and what technique(s) did you use analyze/process them? What did you hope to learn/create?</p>
+<p><strong>2. Implementation</strong> [~2-3 paragraphs]<br>
+Describe your implementation at a system architecture level. You should NOT walk through your code line by line, or explain every function (we can get that from your docstrings). Instead, talk about the major components, algorithms, data structures and how they fit together. You should also discuss at least one design decision where you had to choose between multiple alternatives, and explain why you made the choice you did.</p>
+<p><strong>3. Results</strong> [~2-3 paragraphs + figures/examples]<br>
+Present what you accomplished:</p>
+<ul>
+<li>If you did some text analysis, what interesting things did you find? Graphs or other visualizations may be very useful here for showing your results.</li>
+<li>If you created a program that does something interesting (e.g. a Markov text synthesizer), be sure to provide a few interesting examples of the program&apos;s output.</li>
+</ul>
+<p><strong>4. Reflection</strong> [~1 paragraph]<br>
+From a process point of view, what went well? What could you improve? Other possible reflection topics: Was your project appropriately scoped? Did you have a good plan for unit testing? How will you use what you learned going forward? What do you wish you knew before you started that would have helped you succeed?</p>
+<p>Also discuss your team process in your reflection. How did you plan to divide the work (e.g. split by task, always pair program together, etc.) and how did it actually happen? Were there any issues that arose while working together, and how did you address them? What would you do differently next time?</p>
+<h2 class="mume-header" id="turning-in-your-assignment">Turning in your assignment</h2>
+
+<ol>
+<li>
+<p>Push your completed code to the &quot;master&quot; Git repository (depending on which team member&apos;s repository is being used to work on the project).</p>
+</li>
+<li>
+<p>Submit your Project Writeup/Reflection (1 per team, not 1 per person). This can be in the form of either:</p>
+<ul>
+<li>a PDF document pushed to GitHub, or</li>
+<li>a project webpage (if you choose this route, make sure there is a link to your webpage in your <code>README.md</code> file in your Github repo.)</li>
+</ul>
+</li>
+<li>
+<p>Create a pull request to the upstream repository.</p>
+</li>
+<li>
+<p>Zip the entire project folder to a .zip file and submit it on Blackboard/Assignments/Assignment-2. Leave the url to your project github repository in the comment area on Blackboard.</p>
+</li>
+</ol>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
