@@ -17,7 +17,6 @@ In order to get started on the assignment, you should fork the base repository f
 
 You should read this document in a somewhat non-linear/spiral fashion:
 
-
 1. Scan through Part 1 to get a sense of what data sources are available. Try grabbing text from one of the sources that interests you. You do not need to try all the data sources.
 2. Scan through Part 2 to see a bunch of cool examples for what you can do with your text.
 3. Choose (at least) one data source from Part 1 or elsewhere and analyze/manipulate/transform that text using technique(s) from Part 2 or elsewhere.
@@ -134,7 +133,7 @@ To get reddit data, you need to install Python PRAW package by running the follo
 ```
 pip install praw
 ```
-Here's an example from the PRAW docs page (<https://praw.readthedocs.io/en/stable/>):
+Here's an example from the PRAW docs page (<https://praw.readthedocs.io/en/stable/getting_started/quick_start.html>):
 ```
 import praw
 import config
@@ -268,7 +267,7 @@ plt.scatter(coord[:, 0], coord[:, 1])
 
 # Label the points
 for i in range(coord.shape[0]):
- plt.annotate(str(i), (coord[i, :]))
+    plt.annotate(str(i), (coord[i, :]))
 
 
 plt.show()
@@ -308,6 +307,5 @@ Also discuss your team process in your reflection. How did you plan to divide th
 2. Submit your Project Writeup/Reflection (1 per team, not 1 per person). This can be in the form of either:
     + a PDF document pushed to GitHub, or
     + a project webpage (if you choose this route, make sure there is a link to your webpage in your `README.md` file in your Github repo.)
-
 3. Create a pull request to the upstream repository.
 4. Zip the entire project folder to a .zip file and submit it on Blackboard/Assignments/Assignment-2. Leave the url to your project github repository in the comment area on Blackboard.
