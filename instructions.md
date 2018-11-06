@@ -24,16 +24,10 @@ You should read this document in a somewhat non-linear/spiral fashion:
 
 ### Teaming Logistics:
 
-- You must work in a team of exactly two students.
+- You can work in a team of exactly two students or work individually.
 - Your partner cannot be in the same term-project team with you.
 - Only one of you should fork the base repo for this assignment. The one that forks the repo should then add the other team member as a collaborator on Github for that repo.
 
-### Teaming Guidance:
-
-- Do not thoughtlessly default to working with your friend.
-- Make sure you and your potential partner are on the same page in terms of project topic.
-- You should partner with someone that has roughly the same commitment level to the project. For instance, someone that is super gung-ho about making the most amazing programming project evar should not partner with someone that is just looking to do the minimum.
-- You should be mindful of differences in level of programming experience when selecting your partner. Teams that are very closely matched in terms of programming experience should be no problem. Teams that are not closely matched on this axis can also be quite effective. However, if you and your partner are not closely matched you will want to make sure that you are both vigilant about avoiding some common pitfalls that occur with this type of team. The two most common pitfalls are: the person with more experience gets frustrated with the other team member and does all the work, and the person with more experience writes all the code while the person with less experiences watches them.
 
 ## Part 1: Harvesting text from the Internet
 
