@@ -15,13 +15,9 @@ reviews = imdb.get_title_user_reviews("tt0112697")
 reviewA = (reviews['reviews'][0]['reviewText'])
 Ascore = SentimentIntensityAnalyzer().polarity_scores(reviewA)
 
-
-
-
 # test any review within [:11] by changing the [0]
 review = (reviews['reviews'][8]['reviewText'])
 score = SentimentIntensityAnalyzer().polarity_scores(review)
-
 
 
 # To tokenize into list of words
