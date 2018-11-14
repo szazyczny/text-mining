@@ -8,7 +8,7 @@ imdb = Imdb()
 # print(imdb.search_for_title("Clueless")[0])
 reviews = imdb.get_title_user_reviews("tt0112697")
 
-# import pprint
+import pprint
 # pprint.pprint(reviews)
 
 # scores for reviewA, reviewB, reviewC
@@ -30,7 +30,7 @@ scoretest = SentimentIntensityAnalyzer().polarity_scores(reviewtest)
 def review_sentiment_score(n):
     """
     Generates sentiment analysis score based on selected review.
-    Input 'n' = number of movie review (order of reviews on imdb)
+    Input 'n' = index number of movie review (order of reviews on imdb)
     """
     review = (reviews['reviews'][n]['reviewText'])
     score = SentimentIntensityAnalyzer().polarity_scores(review)
@@ -74,7 +74,7 @@ fdisttest = FreqDist(tokenstest)
 def freqdist_tokens(n):
     """
     Generates frequency distribution of tokenized words in movie review.
-    Input 'n' = number of movie review (order of reviews on imdb)
+    Input 'n' = index number of movie review (order of reviews on imdb)
     """
     review = (reviews['reviews'][n]['reviewText'])
     tokens = (text_process((review)))
